@@ -1,0 +1,272 @@
+
+const recettes = [
+
+    {
+        id: 1,
+        nom: "Légim haïtien",
+        cuisine: "Haïtienne",
+        type: "Plat principal",
+        ingredients: ["Chou", "Carotte", "Épinards", "Ail", "Poivron"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=900",
+        description: "Un grand classique de la cuisine haïtienne."
+    },
+
+    {
+        id: 2,
+        nom: "Soupe joumou",
+        cuisine: "Haïtienne",
+        type: "Soupe",
+        ingredients: ["Giraumon", "Carotte", "Chou", "Bœuf", "Thym"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=900",
+        description: "Une soupe traditionnelle haïtienne."
+    },
+
+    {
+        id: 3,
+        nom: "Lalo haïtien",
+        cuisine: "Haïtienne",
+        type: "Plat principal",
+        ingredients: ["Lalo", "Viande", "Ail", "Poireau", "Épices"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900",
+        description: "Une préparation traditionnelle aux feuilles de lalo."
+    },
+
+    {
+        id: 4,
+        nom: "Salade avocat et tomates cerises",
+        cuisine: "Internationale",
+        type: "Salade",
+        ingredients: ["Avocat", "Tomates cerises", "Oignon", "Chou", "Carotte"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900",
+        description: "Une salade fraîche et colorée."
+    },
+
+    {
+        id: 5,
+        nom: "Salade inspirée du pikliz",
+        cuisine: "Haïtienne",
+        type: "Salade",
+        ingredients: ["Chou", "Carotte", "Poivron", "Vinaigre", "Citron"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900",
+        description: "Une salade croquante aux saveurs haïtiennes."
+    },
+
+    {
+        id: 6,
+        nom: "Poulet sauté aux légumes",
+        cuisine: "Chinoise",
+        type: "Plat principal",
+        ingredients: ["Poulet", "Brocoli", "Carotte", "Poivron", "Ail"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900",
+        description: "Un sauté de poulet et de légumes."
+    },
+
+    {
+        id: 7,
+        nom: "Raviolis chinois vapeur",
+        cuisine: "Chinoise",
+        type: "Entrée",
+        ingredients: ["Farine", "Viande", "Chou", "Gingembre"],
+        adapte: false,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=900",
+        description: "Des raviolis préparés à la vapeur."
+    },
+
+    {
+        id: 8,
+        nom: "Bœuf aux brocolis",
+        cuisine: "Chinoise",
+        type: "Plat principal",
+        ingredients: ["Bœuf", "Brocoli", "Ail", "Gingembre", "Sauce soja"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900",
+        description: "Un classique de la cuisine chinoise."
+    },
+
+    {
+        id: 9,
+        nom: "Soupe chinoise aux œufs",
+        cuisine: "Chinoise",
+        type: "Soupe",
+        ingredients: ["Œufs", "Bouillon", "Oignon vert", "Gingembre"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=900",
+        description: "Une soupe légère aux œufs."
+    },
+
+    {
+        id: 10,
+        nom: "Poisson vapeur au gingembre",
+        cuisine: "Chinoise",
+        type: "Plat principal",
+        ingredients: ["Poisson", "Gingembre", "Poireau", "Ail"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=900",
+        description: "Du poisson délicatement cuit à la vapeur."
+    },
+
+    {
+        id: 11,
+        nom: "Poulet en feuilles de laitue",
+        cuisine: "Chinoise",
+        type: "Entrée",
+        ingredients: ["Poulet", "Laitue", "Carotte", "Ail", "Gingembre"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=900",
+        description: "Une préparation fraîche et croquante."
+    },
+
+    {
+        id: 12,
+        nom: "Tofu à la chinoise",
+        cuisine: "Chinoise",
+        type: "Plat principal",
+        ingredients: ["Tofu", "Ail", "Gingembre", "Poivron"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=900",
+        description: "Du tofu cuisiné avec des aromates."
+    },
+
+    {
+        id: 13,
+        nom: "Soupe aigre-piquante",
+        cuisine: "Chinoise",
+        type: "Soupe",
+        ingredients: ["Champignons", "Tofu", "Vinaigre", "Gingembre"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=900",
+        description: "Une soupe aux saveurs acidulées et épicées."
+    },
+
+    {
+        id: 14,
+        nom: "Rouleaux de printemps frais",
+        cuisine: "Chinoise",
+        type: "Entrée",
+        ingredients: ["Galettes de riz", "Carotte", "Concombre", "Crevettes", "Laitue"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=900",
+        description: "Des rouleaux frais garnis de légumes."
+    },
+
+    {
+        id: 15,
+        nom: "Crevettes à l'ail",
+        cuisine: "Chinoise",
+        type: "Plat principal",
+        ingredients: ["Crevettes", "Ail", "Persil", "Citron"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=900",
+        description: "Des crevettes parfumées à l'ail."
+    },
+
+    {
+        id: 16,
+        nom: "Camomille",
+        cuisine: "Boisson",
+        type: "Infusion",
+        ingredients: ["Fleurs de camomille", "Eau"],
+        adapte: true,
+        classique: true,
+        cafeine: false,
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=900",
+        description: "Une infusion florale sans caféine."
+    },
+
+    {
+        id: 17,
+        nom: "Hibiscus",
+        cuisine: "Boisson",
+        type: "Infusion",
+        ingredients: ["Hibiscus séché", "Eau"],
+        adapte: true,
+        classique: true,
+        cafeine: false,
+        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900",
+        description: "Une infusion fruitée et acidulée."
+    },
+
+    {
+        id: 18,
+        nom: "Rooibos",
+        cuisine: "Boisson",
+        type: "Infusion",
+        ingredients: ["Rooibos", "Eau"],
+        adapte: true,
+        classique: true,
+        cafeine: false,
+        image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=900",
+        description: "Une boisson naturellement sans caféine."
+    },
+
+    {
+        id: 19,
+        nom: "Matcha latte",
+        cuisine: "Boisson",
+        type: "Boisson chaude",
+        ingredients: ["Matcha", "Lait", "Eau"],
+        adapte: true,
+        classique: true,
+        cafeine: true,
+        image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=900",
+        description: "Une boisson japonaise au matcha."
+    },
+
+    {
+        id: 20,
+        nom: "Gâteau au chocolat",
+        cuisine: "Dessert",
+        type: "Pâtisserie",
+        ingredients: ["Chocolat", "Œufs", "Beurre", "Sucre"],
+        adapte: false,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900",
+        description: "Un gâteau gourmand au chocolat."
+    },
+
+    {
+        id: 21,
+        nom: "Yaourt aux fruits rouges",
+        cuisine: "Dessert",
+        type: "Dessert",
+        ingredients: ["Yaourt nature", "Fraise", "Framboise"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=900",
+        description: "Un dessert fruité et frais."
+    },
+
+    {
+        id: 22,
+        nom: "Omelette aux légumes",
+        cuisine: "Internationale",
+        type: "Petit-déjeuner",
+        ingredients: ["Œufs", "Poivron", "Tomate", "Oignon"],
+        adapte: true,
+        classique: true,
+        image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=900",
+        description: "Une omelette aux légumes."
+    }
+
+];
