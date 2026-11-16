@@ -1,1 +1,144 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#B65335">
+
+    <meta name="description"
+          content="MA CUISINE : recettes haïtiennes, chinoises et internationales, boissons et gourmandises.">
+
+    <title>MA CUISINE | De Haïti au reste du monde</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="#accueil">MA CUISINE</a>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#recettes">Recettes</a>
+            <a href="#salon-the">Mon salon de thé</a>
+            <a href="#favoris">Favoris</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    MON UNIVERS CULINAIRE
+                </span>
+
+                <h1>
+                    De Haïti au reste du monde
+                </h1>
+
+                <p>
+                    Des saveurs, des découvertes et
+                    des recettes à partager.
+                </p>
+
+                <a href="#recettes" class="main-button">
+                    Découvrir mes recettes
+                </a>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <h2>Bienvenue dans ma cuisine !</h2>
+
+            <p>
+                Un univers de cuisine haïtienne,
+                chinoise et internationale.
+                Des recettes pour toutes les occasions.
+            </p>
+        </section>
+
+        <section class="recipe-section" id="recettes">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">À DÉCOUVRIR</span>
+                    <h2>Toutes mes recettes</h2>
+                </div>
+
+                <span id="recipe-count">0 recettes</span>
+            </div>
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Rechercher un plat ou un ingrédient..."
+                aria-label="Rechercher une recette"
+            >
+
+            <div class="filters" id="filters">
+                <button class="filter active"
+                        data-filter="Toutes">
+                    Toutes
+                </button>
+
+                <button class="filter"
+                        data-filter="Haïtienne">
+                    Haïtiennes
+                </button>
+
+                <button class="filter"
+                        data-filter="Chinoise">
+                    Chinoises
+                </button>
+
+                <button class="filter"
+                        data-filter="Boisson">
+                    Boissons
+                </button>
+
+                <button class="filter"
+                        data-filter="Dessert">
+                    Desserts
+                </button>
+            </div>
+
+            <div class="recipe-grid" id="recipe-grid">
+                <!-- Les recettes seront générées en JavaScript -->
+            </div>
+
+        </section>
+
+        <section class="tea-section" id="salon-the">
+            <span class="eyebrow">MON PETIT UNIVERS</span>
+            <h2>Mon petit salon de thé</h2>
+            <p>
+                Infusions sans caféine et découvertes
+                autour du matcha.
+            </p>
+        </section>
+
+        <section class="favorites" id="favoris">
+            <h2>Mes recettes favorites</h2>
+            <div class="recipe-grid" id="favorite-grid"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>MA CUISINE</h2>
+        <p>De Haïti au reste du monde.</p>
+        <p>Fait avec passion et gourmandise.</p>
+    </footer>
+
+    <script src="js/recettes.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+
